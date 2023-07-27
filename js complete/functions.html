@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateTax(cost, taxPer){
+            console.log(cost * taxPer) ;
+            
+        }
+        calculateTax(2000,0.2);
+
+        function greet(name){
+            console.log(`Hello ${name}`);
+        }
+        greet('Simon');
+
+        function greet(name){
+            if(!name){
+                console.log('Hi there');
+            }
+            // console.log(`Hello ${name}`);
+        }
+        greet();
+
+        // convert to fahrenheit(celsius)
+
+        function fahrenheit(celsius){
+            return (celsius * 9/5)+32;
+            // console.log(result);
+            // return(result);
+        }
+        console.log(fahrenheit(25));
+
+
+        // convert to celsius(fahrenheit)
+        function celsius(fahrenheit){
+            return(fahrenheit - 32)*5/9;
+            // console.log(result);
+            // return(result);
+        }
+        console.log(celsius(86));
+
+
+        // create a function convert temperature 
+        // that converts F to C
+        // and C to F
+
+        function temperature(degrees , unit){
+
+            if(unit === 'C'){
+                const result = fahrenheit(degrees);
+                return `${result}F`;
+            }else if(unit === 'F'){
+                const result = celsius(degrees);
+                return`${result}C`;
+            }
+
+        }
+
+        console.log(temperature(25,'C'));
+        console.log(temperature(86, 'F'));
+           
+        // console.log(temperature(25, 86));
+
+
+
+
+    </script>
+</body>
+</html>

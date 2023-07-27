@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- Document object model -->
+    <!-- built in obj -->
+
+    <button>1st button</button>
+    <button class="btn2">2nd button</button>
+    <!-- <button class="button2">second button</button> -->
+
+    <script>
+        // properties
+        console.log(document.title);
+        document.title = 'changed';
+
+        console.log(document.body);
+        // html is just an obj when it is in js
+        console.log(typeof document.body);
+
+        // console.log( document.body.innerHTML);
+        // document.body.innerHTML = 'changed';
+
+        // document.body.innerHTML = '<button>good job</button>';
+        
+
+        // methods -> functions saved inside objects
+        // document.querySelector('button');
+        // console.log(document.querySelector('button'));
+        // console.log(document.querySelector('body'));
+
+        // console.log(document.querySelector('button').innerHTML);
+
+        // document.querySelector('button')
+        //     .innerHTML = 'maham';
+        
+
+        document.querySelector('.btn2');
+        console.log(document.querySelector('.btn2'));
+
+       const buttonElement = document.querySelector('.btn2');
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.body.innerHTML = 'hello';
+        // document.title = 'Good Job';
+
+
+    </script>
+    
+</body>
+</html>

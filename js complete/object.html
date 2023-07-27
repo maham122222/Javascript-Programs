@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+
+    <script>
+        // const product = {
+        //     name : "socks",
+        //     price : 1000
+
+        // }
+    
+        // console.log(product);
+        // console.log(product.name);
+
+        // product.name = 'cotton socks';
+        // console.log(product);
+
+        // product.newProperty = true;
+        // console.log(product);
+
+        // delete product.newProperty;
+        // console.log(product);
+
+        // Another way to access values of object 
+
+        const product2 = {
+            name : 'shirt',
+            'delivery-time' : '1 day',
+            rating: {
+                stars :4.5,
+                count:87
+            },
+            fun: function function1(){
+                console.log('function inside object');
+
+            }
+        };
+        
+        console.log(product2);
+        // dot notation
+        console.log(product2.name);
+        // bracket notation
+        // let us use properties that don't work with dot notation
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+        console.log(product2.rating);
+        console.log(product2.rating.count);
+
+        product2.fun();
+        // built in json object, json does not spport functions
+        // js to json object
+        JSON.stringify(product2)
+        console.log(JSON.stringify(product2));
+
+        // json to js oject
+        const jsonString = JSON.stringify(product2);
+        JSON.parse(jsonString);
+        console.log(JSON.parse(jsonString));
+
+
+        // localStorage built in obj
+        // save value more permanently
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

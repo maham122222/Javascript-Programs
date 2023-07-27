@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coin-flip Game</title>
+    <style>
+        .head{
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .tail{
+            background-color: rgb(184, 151, 61);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Coin Flip Game</h1>
+    <button class="head" onclick="
+
+    const randomNum=Math.random();
+    let compMove = ' ';
+    // let result ='';
+
+
+
+    if(randomNum >= 0 && randomNum < 0.5){
+        compMove = 'head';
+    }
+    else if(randomNum >= 0.5 && randomNum <= 1){
+        compMove = 'tail';
+    }
+
+    const guess = 'head';
+
+    if(guess === compMove){
+        result = 'you win'
+    }
+    else{
+        result = ' you lose'
+
+    }
+    alert(`you pick ${guess}. computer pick ${compMove}. ${result}` );
+    
+    
+    
+    ">Head</button>
+    <button class="tail"  onclick="
+
+    const randomNum1=Math.random();
+    let compMove1 = ' ';
+    // let result ='';
+
+
+
+    if(randomNum1 >= 0 && randomNum1 < 0.5){
+        compMove1 = 'head';
+    }
+    else if(randomNum1 >= 0.5 && randomNum1 <= 1){
+        compMove1 = 'tail';
+    }
+
+    const guess1 = 'tail';
+
+    if(guess1 === compMove1){
+        result1 = 'you win'
+    }
+    else{
+        result1 = ' you lose'
+
+    }
+    alert(`you pick ${guess1}. computer pick ${compMove1}. ${result1}` );
+    
+    // localStorage.setItem('score', JSON.stringify(score));
+
+    
+    ">Tail</button>
+
+    <script>
+        let result=" ";
+        
+    </script>
+    
+</body>
+</html>

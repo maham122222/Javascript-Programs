@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function greet(){
+            console.log('hello');
+        };
+
+
+        const fun2 =function greet(){
+            console.log('hello');
+        };
+        fun2();
+        greet();
+
+
+        //can use function in object
+        const obj1={
+            num:2,
+            fun2: function greet(){
+                console.log('heelo');
+            }
+        };
+        obj1.fun2();
+
+    </script>
+    
+</body>
+</html>

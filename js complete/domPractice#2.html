@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="head" onclick="
+    game();
+        
+        
+        ">head</button>
+
+    <button class="tail" onclick="
+    game();
+
+    ">tail</button>
+    <p class="js-para">Select button </p>
+    
+
+    <script>
+
+        let head = document.querySelector('.head');
+        let tail = document.querySelector('.tail');
+
+       function game(){
+        if(head){
+            document.querySelector('.js-para').innerHTML = 'you choose head';
+        }
+        else if(tail){
+            document.querySelector('.js-para').innerHTML = 'you choose tail';
+        }
+       };
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>

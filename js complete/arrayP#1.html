@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //11a ex
+        // const array = [10, 20 ,30];
+        // array[2]=99;
+        // console.log(array);
+
+        //11b ex
+        // function getLastValue(array){
+        //     const lastIndex = array.length-1;
+        //     return array[lastIndex];
+            
+        // }
+        // console.log(getLastValue([1,2,4,5]));
+
+        //11c ex
+        // function swap(array){
+        //     const lastIndex = array.length-1
+        //     const first = array[0];
+        //     const last = array[lastIndex];
+        //     array[0]=last;
+        //     array[lastIndex]=first;
+        //     return array;      
+        // }
+        // console.log(swap([1,2,4,5]));
+
+
+        //11d ex
+        // for(let i =0; i<=10; i+=2){
+        //     console.log(i);
+        // }
+
+
+        //11e ex
+        // for(let i=5; i>=0;i--){
+        //     console.log(i);
+        // }
+
+
+
+        //11f ex
+        //using while loop
+        // let i =0;
+        // while(i<=10){
+        //     console.log(i);
+        //     i+=2;
+        // }
+
+        // let i = 5;
+        // while(i>=0){
+        //     console.log(i);
+        //     i--;
+        // }
+
+
+        //11g ex
+        // let array = [1,2,3];
+        // let result=[];
+        // for(let i=0; i<array.length; i++){
+        //     result.push(array[i]+1);
+        // }
+        // console.log(result);
+
+
+        //11h ex
+        // function addOne(array){
+        //     let result = [];
+        //     for(let i =0; i<array.length; i++){
+        //         result.push(array[i]+1);
+
+        //     }
+        //     return result;
+        // }
+        // console.log(addOne([1,2,3]));
+
+
+        //11i ex
+        // function addNum(array, num){
+        //     let result =[];
+        //     for(let i=0; i<array.length; i++){
+                
+        //         result.push(array[i]+num);
+        //     }
+        //     return result;
+        // }
+        // console.log(addNum([1,2,3],3));
+
+
+        //11j ex
+        //  function addArray(array1, array2){
+        //     let result =[];
+        //     for(let i =0; i<array1.length; i++){
+        //         result.push(array1[i] + array2[i]);
+                
+        //     }
+        //     return result;
+
+        // }
+        // console.log(addArray([1,2,3],[1,2,3]));
+
+
+
+        //11k ex
+        // function countPositive(array){
+        //     let num = 0;
+        //     for(let i =0; i<array.length; i++){
+        //         if(array[i]>0){
+        //             num++
+        //         }
+
+        //     }
+        //     return num;
+        // }
+        // console.log(countPositive([1,-5,3,-9,4]));
+
+
+
+        //11l ex
+        // function minMax(array){
+        //     let result = {
+        //         min:array[0],
+        //         max:array[0]
+        //     }
+        //     for(let i =0; i<array.length;i++){
+        //         const val = array[i];
+        //         if(val<result.min){
+        //             result.min=val;
+        //         }
+        //         if(val>result.max){
+        //             result.max=val;
+        //         }
+        //     }
+        //     return result;
+        // }
+        // console.log(minMax([1, -3, 5]));
+        // console.log(minMax([-2, 3, -5, 7, 10]));
+
+
+        
+        //11m ex
+        // function minMax(array){
+        //     // const val = array[i];
+        //     let result = {
+        //         min:null,
+        //         max:null
+        //     }
+        //     for(let i =0; i<array.length;i++){
+        //         const val = array[i];
+        //         if(result.min === null || val<result.min){
+        //             result.min=val;
+        //         }
+        //         if(result.max === null || val>result.max){
+        //             result.max=val;
+        //         }
+        //     }
+        //     return result;
+        // }
+        // console.log(minMax([]));
+        // console.log(minMax([3]));
+
+
+
+        //11n ex
+        // function countWords(array){
+        //     let result = [];
+        //     for(let i =0; i<array.length; i++){
+        //         let word = array[i];
+
+        //         if(!result[word]){
+        //             result[word] =1;
+        //         }
+        //         else{
+        //             result[word]++;
+        //         }
+        //     }
+        //     return result;
+        // }
+        // console.log(countWords(['apple','apple','apple']));
+
+
+        //11o ex
+        // let words = ['hello','world','search','good','search'];
+
+        // let index =-1;
+        // for(let i = 0; i<words.length;i++){
+        //     if(words[i] === 'search'){
+        //         index =i;
+        //     }
+        // }
+        // console.log(index);
+
+        // words = ['words','not'];
+        //  index =-1;
+        // for(let i = 0; i<words.length;i++){
+        //     if(words[i] === 'search'){
+        //         index =i;
+        //     }
+        // }
+        // console.log(index);
+
+        
+      
+
+
+    //11p ex
+    //  let words = ['hello','world','search','good','search'];
+
+    //     let index =-1;
+    //     for(let i = 0; i<words.length;i++){
+    //         if(words[i] === 'search'){
+    //             index =i;
+    //             break;
+    //         }
+    //     }
+    //     console.log(index);
+
+    //     words = ['words','not'];
+    //      index =-1;
+    //     for(let i = 0; i<words.length;i++){
+    //         if(words[i] === 'search'){
+    //             index =i;
+    //         }
+    //     }
+    //     console.log(index);
+
+
+
+    //11q ex
+    // function findIndex(array, word){
+    //     let index = -1;
+
+    //     for(let i =0; i<array.length; i++){
+    //         if(array[i] === word){
+    //             index=i;
+    //             return index;
+    //             break;
+    //         }
+    //     }
+    //     return -1;
+    // }
+    // console.log(findIndex(['green','red','red','blue','blue','green'],'hh'));
+
+
+    //11r ex
+    // function removeEgg(food){
+    //     let result = [];
+
+    //     for(let i =0; i<food.length;i++){
+    //         if(food[i] === 'egg'){
+    //             continue;
+    //         }
+    //         else{
+    //            result.push(food[i]);
+    //         }
+    //     }
+    //     return result;   
+    // }
+    // console.log(removeEgg(['apple','egg','mango','peach']));
+
+
+    //11s ex
+    // function removeEgg(food){
+    //     let result = [];
+    //     let eggRemoved=0;
+
+    //     for(let i =0; i<food.length;i++){
+    //         if(food[i] === 'egg' && eggRemoved<2){
+    //             eggRemoved++;
+    //             continue;
+    //         }
+    //         else{
+    //            result.push(food[i]);
+    //         }
+    //     }
+    //     return result;   
+    // }
+    // console.log(removeEgg(['apple','egg','mango','peach','egg','egg','egg']));
+
+
+    //11t ex
+    //  function removeEgg(food){
+    //     let result = [];
+    //     let eggRemoved=0;
+    //     food.reverse();
+    //     for(let i =0; i<food.length;i++){
+            
+    //         if(food[i] === 'egg' && eggRemoved<2){
+    //             eggRemoved++;
+    //             continue;
+    //         }
+    //         else{
+    //            result.push(food[i]);
+    //         }
+    //     }
+    //     return result.reverse();   
+    // }
+    // console.log(removeEgg(['apple','egg','mango','peach','egg','egg','egg']));
+
+
+    //11u ex
+    //little correction needed
+    //using slics() method to create copy of array
+    // function removeEgg(food){
+    //     const copy = food.slice();
+    //     let result = [];
+    //     let eggRemoved=0;
+    //     food.reverse();
+    //     for(let i =0; i<food.length;i++){
+            
+    //         if(food[i] === 'egg' && eggRemoved<2){
+    //             eggRemoved++;
+    //             continue;
+    //         }
+    //         else{
+    //            result.push(food[i]);
+    //         }
+    //     }
+    //     return result.reverse();   
+    // }
+    // const food = ['egg','apple','egg','egg','ham']
+    // console.log(removeEgg([food]));
+    // console.log(food);
+
+
+
+
+        //11v ex
+        //FizzBuzz Problem
+        //no divisible by 3 =>fizz
+        //no divisible by 5 =>buzz
+        //no divisible by 3 and 5 =>fizzbuzz
+        
+        // for(let i=0;i<=20;i++){
+            
+        //     if(i%3 === 0){
+        //         console.log('fizz');
+        //     }
+        //     else if(i%5 === 0){
+        //         console.log('buzz');
+        //     }
+        //     else if(i%3 === 0 && i%5 === 0){
+        //         console.log('FizzBuzz')
+        //     }else{ 
+        //     console.log(i);
+        //     }
+            
+
+        // }
+
+
+
+
+        //11w ex
+    //     function findIndex(array, word) {
+    //     for (let i = 0; i < array.length; i++) {
+    //       if (array[i] === word) {
+    //         return i;
+    //       }
+    //     }
+
+    //     return -1;
+    //   }
+    // function unique(array) {
+    //     const result = [];
+
+    //     for (let i = 0; i < array.length; i++) {
+    //       const word = array[i];
+
+          // Using the findIndex() function from above, we
+          // can check if the string is already in the
+          // result array. If it's not in the result array
+          // (index is -1), then add it to the result array.
+    //       if (findIndex(result, word) === -1) {
+    //         result.push(word);
+    //       }
+    //     }
+    //     return result;
+    //   }
+
+    //   console.log(unique(['green', 'red', 'blue', 'red']));
+    //   console.log(unique(['red', 'green', 'green', 'red']));
+
+    
+
+    //11x
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

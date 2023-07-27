@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*string like maham js first wrap it in special obj then it uses property or method*/
+        // this feature is called auto boxing
+        console.log('maham'.length); /*property*/
+        console.log('maham'.toUpperCase()); /*method*/
+
+        // it also works with no and bolean but not with null or undefined
+
+
+        // objects are references ->
+        const obj1 = {
+            msg : 'hello'
+        };
+        // makes copy of the reference
+        const obj2 = obj1;
+
+        obj1.msg = 'good job';
+        console.log(obj1);
+        console.log(obj2);
+
+        const obj3 = {
+            msg: 'good job'
+        };
+        // cant compare obj directly
+        // this result results in false
+        // because values inside obj are not campare 
+        // reference are campared
+        console.log(obj3 === obj1);
+
+        // this will result in true bec we equal them there reference are same so it gives true
+        console.log(obj2 === obj1);
+
+
+        // shorcut for objects
+        const obj4 = {
+            msg : 'good job',
+            price:800
+        };
+       //const msg =  obj4.msg;
+    //    to get out of obj4
+    // destructing
+       const { msg,price } =obj4;
+       console.log(msg);
+       console.log(price);
+
+    //    short hand property
+
+    const obj5 = {
+       // msg : msg
+        msg,
+        price,
+       // method: function function1(){
+         //   console.log('method');
+       // }
+       //short hand method syntax
+        method(){
+            console.log('method');
+        }
+    };
+    console.log(obj5);
+    obj5.method();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

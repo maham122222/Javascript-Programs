@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //    turnary operator
+        // shortcut for if else
+        const res = true ? 'truthy' : 'falsy'
+        console.log(res);
+
+
+        //  to block to run on second condition
+        false && console.log('hello');
+
+        // this will not give output
+        // guard operator
+        const msg1 = false && 'hello';
+        console.log(msg1);
+
+        // this will give output
+        // guard operator
+        const msg2 = 5 && 'hello';
+        console.log(msg2);
+
+        // or operator , default operator
+        const curr1 = undefined || 'USD';
+        console.log(curr1);
+        
+
+        const curr2 = 'EURO' || 'USD';
+        console.log(curr2);
+
+
+    </script>
+
+</body>
+
+</html>
